@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 ul.nav{
@@ -100,3 +101,25 @@ li .dropdown{
         text-align: center;
     }
 }
+
+
+/*  Ended Navbar CSS   */
+
+.top-container {
+    text-align: center;
+    background-color: rgb(134, 134, 137);
+}
+
+.top-container > div {
+    display: inline;
+    width: 25em;
+}
+
+.top-container > div > img {
+    display: inline-block;
+    margin: 30px 20px 30px 30px;
+    width: 25em;
+    height: 18em;
+    object-fit: cover;
+    border-radius: 4%;
+} 
