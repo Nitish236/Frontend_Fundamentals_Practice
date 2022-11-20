@@ -25,7 +25,7 @@ ul.nav{
     text-decoration: none;
 }
 
-.nav li a{
+.nav > li > a{
     margin: 6px 10px;
     font-size: 18px;
 }
@@ -46,7 +46,7 @@ ul.nav{
     background-color: rgb(48, 46, 46);
 }
 
-li.dropdown{
+li .dropdown{
     display: inline-block;
 }
 
@@ -59,13 +59,17 @@ li.dropdown{
     z-index: 1;
 }
 
+.dropdown-content>a{
+    margin: 8px 6px;
+}
+
 .dropdown-content a{
     color: white;
     padding: 8px 5px;
     text-decoration: none;
     display: block;
     text-align: left;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .dropdown-content a:hover {
@@ -74,4 +78,25 @@ li.dropdown{
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+
+@media screen and (max-width: 480px) {
+    .nav li{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .nav li:last-child{
+        float: none;
+    }
+
+    .dropdown-content{
+        width: 100%;
+    }
+
+    .dropdown-content a{
+        text-align: center;
+    }
 }
